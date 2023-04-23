@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../assets/logo.svg";
 import Search from "../assets/search.svg";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -8,29 +9,31 @@ const Navbar = () => {
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-x-3 w-3/12 cursor-pointer">
           <img src={Logo} alt="Logo" />
-          <h1 className="text-lg text-white">Epictetus</h1>
+          <NavLink to="/" className="text-lg text-white">
+            Epictetus
+          </NavLink>
         </div>
         <div className="w-7/12">
           <ul className="flex items-center gap-x-14 text-white">
             <li>
-              <a href="#" className="hover:underline">
+              <NavLink to="/uidesign" className="hover:underline">
                 UI Design
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <NavLink to="" className="hover:underline">
                 Front-End
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <NavLink to="" className="hover:underline">
                 Back-End
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <NavLink to="" className="hover:underline">
                 Lainnya
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
