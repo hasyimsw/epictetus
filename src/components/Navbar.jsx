@@ -7,35 +7,25 @@ const Navbar = () => {
   return (
     <nav className="max-w-[1080px] mx-auto pt-16">
       <div className="flex items-center justify-between">
-        <div className="flex items-center gap-x-3 w-3/12 cursor-pointer">
+        <div className="flex items-center gap-x-2 w-3/12 cursor-pointer">
           <img src={Logo} alt="Logo" />
           <NavLink to="/" className="text-lg text-white">
             Epictetus
           </NavLink>
         </div>
-        <div className="w-7/12">
-          <ul className="flex items-center gap-x-14 text-white">
-            <li>
-              <NavLink to="/uidesign" className="hover:underline">
-                UI Design
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="" className="hover:underline">
-                Front-End
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="" className="hover:underline">
-                Back-End
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="" className="hover:underline">
-                Lainnya
-              </NavLink>
-            </li>
-          </ul>
+        <div className="w-7/12 flex items-center gap-x-14 text-white">
+          <NavLink to="/uidesign" className="hover:underline">
+            UI Design
+          </NavLink>
+          <NavLink to="/frontend" className="hover:underline">
+            Front-End
+          </NavLink>
+          <NavLink to="/backend" className="hover:underline">
+            Back-End
+          </NavLink>
+          <NavLink to="" className="hover:underline">
+            Lainnya
+          </NavLink>
         </div>
         <div className="w-2/12">
           <div className="relative">
